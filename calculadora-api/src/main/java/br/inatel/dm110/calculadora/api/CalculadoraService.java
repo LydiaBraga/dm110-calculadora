@@ -14,7 +14,7 @@ import br.inatel.dm110.calculadora.model.Result;
 public interface CalculadoraService {
 
 	@GET
-	@Path("sum")
+	@Path("/sum")
 	@Produces(MediaType.APPLICATION_JSON)
 	Result sum(@QueryParam("first") int first, @QueryParam("last") int last);
 	
